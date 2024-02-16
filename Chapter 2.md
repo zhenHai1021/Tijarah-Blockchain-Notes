@@ -338,7 +338,8 @@ Claims settlement
 
 ## How to choose the right blockchain
 ### 1. Use case
-<ol type="a"><li>Permissioned chain are optionally the best option for industries that handle many private data and processes</li><li>Permissionless are more convenient for shared resources and publicly accessible information.</li></ol>
+<ol type="a"><li>Permissioned chain are optionally the best option for industries that handle many private data and processes. Or the private administrator decide own resources distribution.
+</li><li>Permissionless are more convenient for shared resources and publicly accessible information.</li></ol>
 
 ### 2. The number of users
 <ol type="a"><li>Its crucial to consider the number of users accessing it, and the limited user base for the permissioned blockchains.</li><li>More people are better on permissionless</li></ol>

@@ -510,5 +510,5 @@ Banking ledgers have historically been centralized. However, DLT solutions allow
 Decentralized Finance (DeFi) builds off of DLT solutions. DeFi allows for users to enter into familiar transactions offered by traditional banking solutions. However, these trades, loans or investments are made without a centralized intermediary.
 
 # Differences between Bitcoin and Ethereum
-![Differences between Bitcoin and Etherem](/assets/images/Diff BNE (1).png "Diff Bitcoin and Ether")
+![Differences between Bitcoin and Etherem](assets/images/Diff BNE (1).png "Diff Bitcoin and Ether")
 

@@ -490,4 +490,25 @@ DLTs may take various forms, while a blockchain uses one specific infrastructure
 |==|==|
 | Data can be chained, but not using “blocks” | Data is stored in chained “blocks” |
 |Can be encrypted|Always encrypted|
-|
+|Private and permissioned, but can be permissionless|Generally public and permissionless, but some are permissioned|
+|Can be immutable|Always immutable|
+
+## Types of Distributed Ledgers
+1. Private/Permissioned: There is no decentralization. Both the applications and the network nodes that operate them must **receive invitations** based on specific criteria or identification requirements. Any participant can be **expelled** from the network **without prior** notice.
+2. Private/Permissionless: Involves **inviting applications** to join the network, with the possibility of removal at any time without notice. However, the **network nodes**, responsible for running these applications, can **join** and **contribute anonymously** and freely, often in exchange for the network’s native cryptocurrency.
+3. Public//Permissioned: **Applications** can be** deployed **or removed from the network **without** the need to **notify** anyone, **disclose** their **identity**, or **meet specific application** criteria. The network nodes that operate these applications must be invited to participate.
+4. Public/Permissionless: Highest degree of **decentralization**. Applications can be deployed or removed from the network without any notification, identity disclosure, or application criteria requirements. Similarly, network nodes can join and contribute freely and anonymously, typically in exchange for the network’s native cryptocurrency
+
+## FAQ
+1. What is Distributed Ledger Technology Used For?
+Distributed ledger technology is used to securely store data so that is is unaltered, transparent, synchronized, and accurate. This can be extended to counting votes, recording transactions (financial or non-financial), or reporting activity across all users of a single DLT solution.
+2. Is DLT better than blockchain
+Each has a different purpose. Eg, blockchain is designed to be pubic and permissionless, while DLT is intended for private uses and can be permissioned or permissionless.
+3. Do Banks Use DLT?
+Banking ledgers have historically been centralized. However, DLT solutions allow for banking practices (ie, saving value, entering into transactions). If a financial institution has implemented a cryptocurrency, digital currency, or other means of recording on a digital ledger, that financial institution can theoretically enter into all of the same transactions as a traditional bank through the use of smart contracts. This can range from recording transactions, KYC information, or settling securities.
+4. What is the difference between DLT and DeFi?
+Decentralized Finance (DeFi) builds off of DLT solutions. DeFi allows for users to enter into familiar transactions offered by traditional banking solutions. However, these trades, loans or investments are made without a centralized intermediary.
+
+# Differences between Bitcoin and Ethereum
+
+

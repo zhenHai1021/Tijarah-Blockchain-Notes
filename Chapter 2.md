@@ -346,3 +346,42 @@ Claims settlement
 
 ### 3. Accessibility and Efficiency
 <ol type="a"><li>Permissioned chain have more complex accessibility features but are highly efficient</li><li>Permissionless ones are easy to explore but less effective</li></ol>
+
+
+# Distributed Ledger Technology (DLT)
+DLT is the technology infrastructure and protocols that allow simultaneous access, validation, and record updating across a **networked database**/multiple places at the same time. Unlike traditional databases, DLT has **no central data** store or administration functionality. In DLT, **every node** in the network **processes every transaction**, coming to its own **conclusions** and then **voting** on the conclusions to make sure the **majority agree** with the conclusion. This process is known as **consensus**, and it allows for the **recording** of transactions in a decentralized and secure manner.
+
+Key: 
+<ul>
+   <li>Distributed ledgers are maintained by a network of nodes, each of which has a copy of the ledger, validates the information, and helps reach a consensus about its accuracy.</li>
+<li>Distributed ledgers have been around for decades but have become more well-known, researched, used and developed since Bitcoin was introduced</li>
+   <li>Distributed ledger can be used in nearly every industry where data is collected and used</li>
+   <li>All blockchains are distributed ledgers, but not all distributed ledgers are blockchains</li>
+   <li>Though DLT enhances accountability, security, and accessibility, it is still complex, difficult to scale, and not subject to strong regulation.</li>
+</ul>
+
+Characteristics:
+<ol>
+   <li>
+      Decentralization: Unlike centralization, a single entity takes control of the entire database. DLTs distribute the control among all participants/nodes in the network. This enhances security and reduces risks of central points of failure.
+   </li>
+   <li>
+      Transparency and Immutability: Transparency transactions on DLT to all nodes, and cannot be altered once recorded. The immutability ensures the integrity of of the ledger and builds trust among users
+   </li>
+   <li>
+      Consensus Mechanisms: DLTs use various consensus mechanisms to validate transactions including Proof of Work, Proof of Stake, and others, depending on the specific implementation. These ensures that all participants agree on the state of the ledger.
+   </li>
+   <li>
+      Security: The decentralized and immutable DLT, combined with cryptography, makes it secure against tampering and fraud.
+   </li>
+</ol>
+
+Applications of DLT
+<ol>
+   <li>
+      Cryptocurrencies: Eg. Bitcoin. DLT enables the secure and transparent recording of cryptocurrency transactions.
+   </li>
+   <li>
+      Supply Chain Management: DLT enhances transparency and traceability in the supply chain, allowing all parties to **track the movement of goods**, manufacturing, processing and their authenticity. This enables **real-time visibility** into **supply chain operations**, **reducing manual work**. Eg. a distributed ledger used to track the provenance of goods, ensuring ethical sourcing and enhancing consumer trust.
+   </li>
+</ol>

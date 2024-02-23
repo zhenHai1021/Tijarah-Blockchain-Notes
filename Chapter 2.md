@@ -487,7 +487,7 @@ DLT offers the ability to store and **record transitions** using only a network 
 DLTs may take various forms, while a blockchain uses one specific infrastructure that uses a linear system of blocks to record and verify information.
 
 | Distributed Ledger | Blockchain |
-|==|==|
+|:---|:----|
 | Data can be chained, but not using “blocks” | Data is stored in chained “blocks” |
 |Can be encrypted|Always encrypted|
 |Private and permissioned, but can be permissionless|Generally public and permissionless, but some are permissioned|
@@ -510,5 +510,59 @@ Banking ledgers have historically been centralized. However, DLT solutions allow
 Decentralized Finance (DeFi) builds off of DLT solutions. DeFi allows for users to enter into familiar transactions offered by traditional banking solutions. However, these trades, loans or investments are made without a centralized intermediary.
 
 # Differences between Bitcoin and Ethereum
-![Differences between Bitcoin and Etherem](assets/images/Diff BNE (1).png "Diff Bitcoin and Ether")
+|Platform|Consensus Mechanism|Scalability|Programming Language|Use Cases|
+|--|--|--|--|--|
+|Ethereum|PoW (Transitioning to PoS)|Working on Ethereum 2.0 for improved scalability|Solidity|General-purpose blockchain, decentralized applications|
+|Quorum (ConsenSys)|Raft of Istanbul BFT|Focus on privacy and performance|Solidity|Enterprise solutions, finance|
+|Hyperledger Fabric|Pluggable, supports various mechanisms|Modular architecture for scalability|Go, Java, Node.js|Supply chain, finance, enterprise solutions|
+|Corda|Notary-based consensus|Designed for privacy and scalability|Kotlin, Java|Financial services, legal, supply chain|
+|IBM Blockchain|Supports multiple mechanisms|Modular for different business needs|Go, Java|Supply chain, finance, healthcare|
+|Bitcoin|PoW|Limited scalability, slower transaction processing|Bitcoin Script|Peer-to-peer digital currency|
+|Hyperledger Sawtooth|PoET (Pluggable)|Modular design for flexibility|Python, Go|Supply chain, finance|
+|Stellar|Federated Byzantine Agreement (FBA)|High throughput and fast settlement|Stellar (custom language)|Cross-border payments, remittances|
+|Ripple|Ripple Protocol Consensus Algorithm (RCPA)|Fast and low-cost transactions|Ripple Transaction Protocol (custom)|Cross-border payments, remittances|
+|EOSIO|Delegated Proof of Stake (DPoS)|High throughput and low latency|C++|Decentralized applications, social media|
+|MaalChain|Maal Validator DAO (PoA)|High TPS (UpTo 4000)|Go|Decentralized Applications, Concept of Identity based Private dApps|
+
+## Understanding Bitcoin
+Launched in 2009 by the pseudonymous Satoshi Nakamoto, Bitcoin (BTC) stands as the pioneering cryptocurrency, dominating the digital currency landscape. It was conceived as a decentralized alternative to traditional currencies, facilitating **peer-to-peer value transfers**. Bitcoin transactions undergo **verification** by a **network of nodes **using **cryptography** and are **recorded** on a **transparent ledger** known as the blockchain. This blockchain is distributed among multiple nodes to prevent **tampering**; any attempt at altering the blockchain is swiftly detected and rejected by the network, known as tampering. Tampering is detected in the Bitcoin network through hashes, long strings of numbers that must match across all nodes. The **SHA-256 hash** function turns data into these unique strings, which are then **broadcasted** and **added** to new blocks once **validated**. This safeguarding process relies on **cryptographic hashes**, **unique strings** of numbers ensuring **consistency** across all nodes. Miners, employing proof-of-work, validate and add transactions to new blocks, ensuring consensus and thwarting malicious alterations. 
+
+## Understanding Ethereum
+Ethereum (ETH) was proposed in late 2013 and brought to life in 2015 by Vitalik Buterin. Ethereum’s primary purpose extends beyond the simple transfer of value. Instead, Ethereum is designed to be a platform that allows **P2P contracts** and applications to be built and run without control, permission, or interference from **third parties**. These decentralized apps (DApps), are powered by Ethereum’s own **cryptographic token**, Ether (ETH). Ether is used to interact with applications on the Ethereum network. Paying for transactions, creating smart contracts and using DApps all require users to pay fees in Ether. As the value of Ether went up, it also started being used as a store of value. Decentralized applications (DApps) on Ethereum enable the utilization of Ether and other cryptocurrencies in various ways, such as **collateral** for loans or earning interest by lending them out. Collateral is assets offered as security against loan repayment. For instance, users can deposit $1,000 worth of ETH into a DApp, securing a $750 loan while earning interest on their deposited funds.
+
+|Aspect|Bitcoin|Ethereum|
+|:---|:---|:---|
+|Purpose|Decentralized and digital cash system|Cryptocurrency. Open-source platform for DApps and smart contracts. Directly without middleman|
+|Technology|Consensus mechanism
+Proof-of-Work (PoW), where miners solve mathematical problems to validate transactions and add to the blockchain. High consumption computational power and energy.|Transition with PoW to Proof-of-Stake (PoS) with Ethereum 2.0 upgrade. In PoS, validators are chosen to create a new block holding the amount of cryptocurrency & willing to “stake” as collateral. 
+Efficient > PoW|
+|Scalability|PoW is not scalable. Only handle a limited no. of transactions per second, a max of around 7 per second.|PoS is scalable. Processes up to 30 transactions/second, still face scalability issues. Through upgrades such as transitioning to PoS and an upgrade called sharding.|
+|Supply (total no. of coins created)|Capped supply of 21 million coins|Has no maximum supply limit, which means unlimited no. of Ether can be created. However, the inflation rate is low to negative.|
+|Use Cases|Digital money/digital gold - digital currency or a store of value|Smart contracts & DeFi, without third intermediaries
+
+Ethereum platform for most NFT, unique digital assets that can represent ownership or proof of authenticity for everything from digital art to virtual real estate |
+|P
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

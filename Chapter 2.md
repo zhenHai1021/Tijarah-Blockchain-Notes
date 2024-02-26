@@ -464,7 +464,7 @@ Privacy Concerns: DLT can provide transparency, it may not be suitable for appli
 Initial Implementation Costs: The upfront costs of implementing DLT can be significant, and organizations may not see immediate returns on their investment
 
 | Pros | Cons | 
-| ====| ====|
+|---|---|
 | Spreads systematic risk around, minimizing the risk of a single point of failure | Is more complex compared to more traditional ledger solutions |
 | Has greater security due to cryptographic algorithms | Often requires higher energy consumption for operation |
 | Allows for transparency and visibility into operations | May have difficult scaling as more users/transactions occur |

@@ -1,8 +1,8 @@
 ## Permissioned vs Permissionless Networks
 Eg, a bank may be running a permissioned blockchain operated through a designated number of nodes internal to the bank to track money transfers.You cannot access this blockchain because you do not have the permissions required. In contrast, you could join a permissionless blockchain like a cryptocurrency mining network once you have established a semi-anonymous account in that network.
 
-| D | Permissionless | Permissioned |
-| --- | --- | --- | 
+||Permissionless|Permissioned|
+|-|-|-|
 |Overview| - Open network available for anyone to interact and participate in consensus validation. - Fully decentralized across unknown parties| Closed network. Designated parties interact and participate in consensus validation. Partially decentralized (eg. distributed across known parties)|
 |AKA| Public, Trustless| Private, permissioned sandbox|
 |Attribute| <ul><li>Full transparency of transactions, based on open source protocols</li><li>Development via open source</li><li>Mostly anonymous, with some exceptions</li><li>Privacy depends on technological limitation or innovations</li><li>No central authority</li><li>Often involves digital asset or token for incentive</li></ul>|<li>Controlled transparency, based on organizations’ goals</li><li>Development via private entities</li><li>Not anonymous</li><li>Privacy depends on governance decisions</li><li>No single authority, but private group authority decisions</li><li>May or may not involve digital assets or tokens</li></ul>|

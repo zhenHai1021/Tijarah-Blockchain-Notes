@@ -13,6 +13,15 @@
 |EOSIO|Delegated Proof of Stake (DPoS)|High throughput and low latency|C++|Decentralized applications, social media|
 |MaalChain|Maal Validator DAO (PoA)|High TPS (UpTo 4000)|Go|Decentralized Applications, Concept of Identity based Private dApps|
 
+## Hyperledger Sawtooth
+![PoET](https://github.com/zhenHai1021/Tijarah-Blockchain-Notes/assets/113818064/4020103b-4fb6-41bf-bcd2-19dfa23b8f55)
+
+Consensus Mechanism Proof of Elapsed Time (PoET)
+- Follows a lottery system that spread the chances of winning equally across network participants, giving each node the same chance (probability)
+- PoET generates a random wait time for each node in the blockchain; each node must sleep for that duration
+- Node with the shortest wait time will wake up first and win the block, thus being allowed to commit a new block to the blockchain.
+- The PoET workflow is similar to PoW but consumes less power bcs it allow a node to sleep and switch to other tasks for the specific time, thereby increasing network energy efficiency.
+
 ## Understanding Bitcoin
 Launched in 2009 by the pseudonymous Satoshi Nakamoto, Bitcoin (BTC) stands as the pioneering cryptocurrency, dominating the digital currency landscape. It was conceived as a decentralized alternative to traditional currencies, facilitating **peer-to-peer value transfers**. Bitcoin transactions undergo **verification** by a **network of nodes **using **cryptography** and are **recorded** on a **transparent ledger** known as the blockchain. This blockchain is distributed among multiple nodes to prevent **tampering**; any attempt at altering the blockchain is swiftly detected and rejected by the network, known as tampering. Tampering is detected in the Bitcoin network through hashes, long strings of numbers that must match across all nodes. The **SHA-256 hash** function turns data into these unique strings, which are then **broadcasted** and **added** to new blocks once **validated**. This safeguarding process relies on **cryptographic hashes**, **unique strings** of numbers ensuring **consistency** across all nodes. Miners, employing proof-of-work, validate and add transactions to new blocks, ensuring consensus and thwarting malicious alterations. 
 

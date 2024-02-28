@@ -145,6 +145,7 @@ The miner may potentially test a **large number of nonce** options before gettin
 ## Design of Hashing Algorithms
 At the heart of a hashing is a mathematical function that operates on two fixed-size blocks of data to create a hash code. This hash function forms the part of the hashing algorithm.
 The size of each data block varies depending on the algorithm. Typically the block sizes are from **128 bits to 512 bits**.
+
 ![Hash algorithm](https://github.com/zhenHai1021/Tijarah-Blockchain-Notes/assets/113818064/659a1153-9c3f-4af1-b2df-2dac2ad6812b)
 
 Hashing also involves round of aboce hash f(x) like a block cipher. Each round takes an input of a fixed size, typically a combincation of the most recent message block and the output of the last round.
@@ -227,9 +228,10 @@ These attacks may allow the attackers to double-spending their money or to tampe
 ![PA](https://github.com/zhenHai1021/Tijarah-Blockchain-Notes/assets/113818064/e0548049-5096-4e8e-b58f-5d21ae1d33ef)
 
 3. **Second preimage attacks**: A second preimage attack is an attack in which an attacker can find **a second message** that **produces** the **same hash value** as a **given message**. If an attacker can find a **second preimage**, they could potentially create a **fake transaction** that has the **same hash value** as a **legitimate transaction**.
+   
 ![SPA](https://github.com/zhenHai1021/Tijarah-Blockchain-Notes/assets/113818064/e6b04d22-6679-44af-86c2-82914b05ad75)
 
-4. **Length extension attacks**: A length extension attack is an attack in which an attacker can **extend a message** after it has been **hashed** and **produce a different hash value**. If the attacker perform this, may tamper with the data on the blockchain.
+5. **Length extension attacks**: A length extension attack is an attack in which an attacker can **extend a message** after it has been **hashed** and **produce a different hash value**. If the attacker perform this, may tamper with the data on the blockchain.
 ![LE](https://github.com/zhenHai1021/Tijarah-Blockchain-Notes/assets/113818064/d9bd7315-8cfd-451e-9600-87ce0ecf56bc)
 
 > [!WARNING]

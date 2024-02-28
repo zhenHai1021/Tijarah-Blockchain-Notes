@@ -171,9 +171,9 @@ Since, The hash value of first message block becomes an input to the second hash
 ![DM](https://github.com/zhenHai1021/Tijarah-Blockchain-Notes/assets/113818064/72ed613d-7dfa-490e-a14d-e2225717b667)
 
 Assume, Alice sent a message and digest pair to Bob. To check the integrity of message Bob runs the cryptographic hash function on the received message and gets a new digest. Now, Bob will comparer the new digest and the digest sent by Alice. If both are the same then Bob is sure that the ori message is not changed.
-- The digest should be unchanged during the transmission
-- One way function, which is practically infeasible to invert. This cryp hash function takes a message of variable length as input and creates  a digest/hash/fingerprint of fixed length, which is used to verify the integrity of the message.
-- Digest is encrypted with the sender's private key. Now this digest is called digital signature. Which can be only decrypted by the receiver who has the sender's public key. Now the receiver can authenticate the sender and also verify the integrity of the sent message.
+- The digest should be **unchanged** during the **transmission**
+- **One way function**, which is practically infeasible to invert. This cryp hash function takes a **message** of variable length as **input** and creates  a **digest/hash/fingerprint** of fixed length, which is used to verify the integrity of the message.
+- Digest is **encrypted** with the **sender's private key**. Now this digest is called **digital signature**. Which can be only **decrypted** by the **receiver** who **has** the **sender's public key**. Now the receiver can authenticate the sender and also verify the integrity of the sent message.
 
 **Secure Hash Function (SHA)**: Family of SHA comprise of four algorithms; SHA-0, SHA-1, SHA-2, and SHA-3. Though from same family, but there are structurally different.
 - The original version is SHA-0, a **160-bit** hash function. Few weaknesses and not popular. Later in 1995, SHA-1 was designed to correct alleged weaknesses of SHA-0.
@@ -188,6 +188,18 @@ Assume, Alice sent a message and digest pair to Bob. To check the integrity of m
 The sponge function consists of two parts: The absorber and the squeezer.
 >> The absorber takes the **input message** and **absorbs** it into a **state**, which is represented as a **5x5 matrix** of 64-bit words. The absorber is designed to be highly efficient and can process large amounts of data quickly.
 >> Once the absorber has **finished processing** the **input message**, the squeezer is used to **extract the output hash**. **The squeezer** is used to extract the **output hash**. The squeezer takes the **state and outputs** a **fixed-length bit string**. The length of the output hash can be varied, depends on the desired security level.
+
+**Characteristic of the SHA-256**
+![SHA-256](https://github.com/zhenHai1021/Tijarah-Blockchain-Notes/assets/113818064/dfe8f895-c2ae-47c2-a41a-c19d8ad362a2)
+- Message Length: The length of the cleartext should be **< 264bits**. The size needs to be in the **comparison area** to keep the **digest** as **random** as possible.
+- Digest Length: The length of the hash digest should be 256bits in SHA-256 algo, 512bits in the SHA-512. Bigger digests usually suggest **more calculations** at the **cost of speed** and **space**.
+- Irreversible: All hash functions such as SHA-256 are irreversible. Should neither get a **plaintext** when u have the **digest** beforehand nor should the **digest** provide its **original value** when u pass it **through the hash function** again. *Digest should not be able to produce the original message.
+
+**Application of SHA algo**
+![apps_Sha](https://github.com/zhenHai1021/Tijarah-Blockchain-Notes/assets/113818064/60050235-03dd-4c17-81e2-a135826ab2b8)
+- Digital Signature Verification: DS follow **asymmetric encryption** to verify the authenticity of a document/file. Hash algo like SHA-256 go a long way in ensuring the verificaiton of the signature
+- Password Hashing: Website store user passwords in a hased format for 2 benefits. It helps foster a sense of privacy, and it lessens the load on the central database since all the digests area of similar size.
+- SSL Handshake: Crucial for **web browsing sessions**. Consist of the web browsers and the web servers agreeing on encryption keys and hashing authenticiation to prepare a secure connections.
 
 **RIPEMD**: The RIPEMD is an acronym for RACE Integrity Primitives Evaluation Message Digest.
 - The set includes RIPEMD, RIPEMD-128, and RIPEMD-160 (most common). There also exist **256**, and **320-bit** versions of this algorithm

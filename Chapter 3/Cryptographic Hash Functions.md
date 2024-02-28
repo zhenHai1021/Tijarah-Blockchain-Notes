@@ -161,12 +161,19 @@ Since, The hash value of first message block becomes an input to the second hash
 > **Hashing algorithm** is a process for using the hash function, specifying how the message will be broken up and how the results from previous message blocks are chained together.
 
 ## Popular Hash Functions
-**Message Digest (MD)**: MD5 was the most popular and widely used hash function for quite some years.
+**Message Digest (MD)**: Message Digest is used to ensure the integrity of a message transmitted over an insecure channel. MD5 was the most popular and widely used hash function for quite some years.
 - The MD family comprises of hash functions MD2, MD4, MD5 and MD6. That was adopted as Internet Standard RFC 1321. It is a **128-bit** hash function
 - MD5 digests have been widely used in the software world to provide assurance about **integrity of transferred file**.
 > [!Tip]
 > Eg, file servers often provide a pre-computed MD5 checksum for the files, so that a user can compare the checksum of the downloaded file to it.
 - In 2004, collisions were found in MD5. An **analytical attack** was reported to be successful only in an hour using **computer cluster**. This collision attack resulted in compromised MD5 and hence it is no longer recommended for use.
+
+![DM](https://github.com/zhenHai1021/Tijarah-Blockchain-Notes/assets/113818064/72ed613d-7dfa-490e-a14d-e2225717b667)
+
+Assume, Alice sent a message and digest pair to Bob. To check the integrity of message Bob runs the cryptographic hash function on the received message and gets a new digest. Now, Bob will comparer the new digest and the digest sent by Alice. If both are the same then Bob is sure that the ori message is not changed.
+- The digest should be unchanged during the transmission
+- One way function, which is practically infeasible to invert. This cryp hash function takes a message of variable length as input and creates  a digest/hash/fingerprint of fixed length, which is used to verify the integrity of the message.
+- Digest is encrypted with the sender's private key. Now this digest is called digital signature. Which can be only decrypted by the receiver who has the sender's public key. Now the receiver can authenticate the sender and also verify the integrity of the sent message.
 
 **Secure Hash Function (SHA)**: Family of SHA comprise of four algorithms; SHA-0, SHA-1, SHA-2, and SHA-3. Though from same family, but there are structurally different.
 - The original version is SHA-0, a **160-bit** hash function. Few weaknesses and not popular. Later in 1995, SHA-1 was designed to correct alleged weaknesses of SHA-0.

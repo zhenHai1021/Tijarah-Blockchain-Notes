@@ -16,11 +16,46 @@
 ## Hyperledger Sawtooth
 ![PoET](https://github.com/zhenHai1021/Tijarah-Blockchain-Notes/assets/113818064/4020103b-4fb6-41bf-bcd2-19dfa23b8f55)
 
-Consensus Mechanism Proof of Elapsed Time (PoET)
+Consensus Mechanism: Proof of Elapsed Time (PoET)
 - Follows a lottery system that spread the chances of winning equally across network participants, giving each node the same chance (probability)
 - PoET generates a random wait time for each node in the blockchain; each node must sleep for that duration
 - Node with the shortest wait time will wake up first and win the block, thus being allowed to commit a new block to the blockchain.
 - The PoET workflow is similar to PoW but consumes less power bcs it allow a node to sleep and switch to other tasks for the specific time, thereby increasing network energy efficiency.
+
+## Stellar
+Consensus Mechanism: Federated Byzantine Agreement (FBA)
+- Each node does not have to be known and verified ahead of time, **membership** is open, control is decentralized.
+- An FBA ledger can be up-to-date and accurate without requiring all of its nodes agree. Instead, a quorum emerges from the choices of each nodes.
+- A quorum slice can convince an individual node of agreement, while a quorum convinces the entire system of agreement. If a node finds a particular quorum slice fully trustworthy, it can consent to go along with whatever that quorum slice agrees on.
+> [!Tip]
+> A Quorum slice
+> ![AQS](https://github.com/zhenHai1021/Tijarah-Blockchain-Notes/assets/113818064/db48ec25-5531-49e7-bab5-ce3a169cf2d1)
+>
+> Quorum Intersections
+> ![QI](https://github.com/zhenHai1021/Tijarah-Blockchain-Notes/assets/113818064/84191618-70dc-4df3-a354-6ec587bcdc33)
+>
+> 3 Disjoint Quorums
+> ![3DQ](https://github.com/zhenHai1021/Tijarah-Blockchain-Notes/assets/113818064/19ce3e0a-e16d-40d6-92ab-7ee4319ccc30)
+
+## Ripple
+Consensus Mechanism: Ripple Protocol Consensus Algorithm (RCPA)
+- Voting: Nodes cast votes to either validate or reject the transaction
+- Quorum: If the no. of validating votes meets or > validation quorum, the transaction is considered valid.
+- Each node selects a list of other nodes they trust (their Unique Node List or UNL)/List of trusted peers
+- The strategist node instructs each general to reach consensus with the people in their UNL
+- If > 80% of the nodes in their UNL agree on the same dicision, it = the final consensus
+- Provides high transaction speed, scalability, and energy efficiency.
+- Some centralization concerns and potential vulnerabilities.
+
+## EOSIO
+Consensus Mechanism: Delegated Proof of Stake (DPoS)
+
+![Dpos](https://github.com/zhenHai1021/Tijarah-Blockchain-Notes/assets/113818064/41cb3caf-bc65-4434-a3a5-66e993f90c00)
+- In DPoS, users vote to delegate (a person representative) block validation rights to specific individuals known as witnesses or block producers
+- Each block has a predefined no. of delegates (witnesses) responsible for validating it. The exact number varies across different blockchains using DPoS.
+- DPoS operates through a democratic process where token holders participate in selecting delegates.
+- Elected delegates verify transactions and create new blocks on behalf of the network and distribute the reward to the one who voted as delegated
+- Aims to be more afforable and efficient.
 
 ## Understanding Bitcoin
 Launched in 2009 by the pseudonymous Satoshi Nakamoto, Bitcoin (BTC) stands as the pioneering cryptocurrency, dominating the digital currency landscape. It was conceived as a decentralized alternative to traditional currencies, facilitating **peer-to-peer value transfers**. Bitcoin transactions undergo **verification** by a **network of nodes **using **cryptography** and are **recorded** on a **transparent ledger** known as the blockchain. This blockchain is distributed among multiple nodes to prevent **tampering**; any attempt at altering the blockchain is swiftly detected and rejected by the network, known as tampering. Tampering is detected in the Bitcoin network through hashes, long strings of numbers that must match across all nodes. The **SHA-256 hash** function turns data into these unique strings, which are then **broadcasted** and **added** to new blocks once **validated**. This safeguarding process relies on **cryptographic hashes**, **unique strings** of numbers ensuring **consistency** across all nodes. Miners, employing proof-of-work, validate and add transactions to new blocks, ensuring consensus and thwarting malicious alterations. 

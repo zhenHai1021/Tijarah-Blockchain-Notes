@@ -13,40 +13,45 @@ Properties:
 - Group structure. EC from a mathematical group under an operation called point addition. This define how u can add 2 points on the curve to produce a third point on the same curve.
 
 Graph Work:
+
 ![ECC graph](https://github.com/zhenHai1021/Tijarah-Blockchain-Notes/assets/113818064/7f30c6d5-2e64-449e-a459-faaf79bdc95c)
 
 From ascending flow start from 1G
-1. Find the tangent of point 1G, then a line pass through any first point intersact the graph
-2. 2G is intesacted, a x-axis symmetric/mirror of point 2G is pointed out to 3G
-3. Again the process, Find the tangent of point 3G,, line for the first intersaction.
+1. Find the tangent of point 1G, then a line pass through any first point intersact the graph.
+2. 2G is intesacted, a x-axis symmetric/mirror of point 2G is pointed out to 3G.
+3. Again the process, Find the tangent of point 3G, line for the first intersaction.
 4. 4G until the desired.
 
-Ref: [Elliptic Curves - Computerphile](https://youtu.be/NF1pwjL9-DE?si=dAh5r9-nUzBTLE0Y)
+Ref: 
+[Elliptic Curves - Computerphile](https://youtu.be/NF1pwjL9-DE?si=dAh5r9-nUzBTLE0Y)
 
 **How does ECC Work**
 The public key is shared with others. Then anyone can use it send the owner an encrypted message
 THe private key is kept secret, only the owner knows it. They need it to decrypt the received encrypted mesasge.
-
 ![ECC(1)](https://github.com/zhenHai1021/Tijarah-Blockchain-Notes/assets/113818064/7039ae82-496b-4cbe-8b52-f9e781c5de24)
 
 The security of the ECC encryption relies on the relationship between the key pairs and the properties and mathematical problems of the elliptic curve.
 1. Key Generation. Bob and Alice select a specific Elliptic Curve with known parameters. They can then independently choose or generate random numbers as their private keys. Once Bob’s private key is ready, he computes the corresponding public key using his private key and then chooses an elliptic curve.
+   
 ![ECC1](https://github.com/zhenHai1021/Tijarah-Blockchain-Notes/assets/113818064/4eca8a06-90dc-4c5a-aea1-a91f26808a7c)
 
 2. Key distribution. Bob shares his ECC public key with whomever he wants to exchange messages with, let’s say his friend Alice.
+   
 ![ECC2](https://github.com/zhenHai1021/Tijarah-Blockchain-Notes/assets/113818064/f100c494-742e-4c72-b177-b74152cf3c8f)
 
 3. Encryption. Once Alice knows Bob’s public key, she uses multiple calculations based on elliptic curve theory to transform a plaintext message into ciphertext.
+   
 ![ECC3](https://github.com/zhenHai1021/Tijarah-Blockchain-Notes/assets/113818064/66112432-77e5-48da-9698-80b88b124ea5)
 
-4. Decryption. Bob receives the encrypted message and uses his valid ECC private key to obtain the original plaintext message.
+5. Decryption. Bob receives the encrypted message and uses his valid ECC private key to obtain the original plaintext message.
+   
 ![ECC4](https://github.com/zhenHai1021/Tijarah-Blockchain-Notes/assets/113818064/3df84876-31e7-476f-92ba-e6507e95970f)
 
-> [!Notes]
+> [!Note]
 > Is ECC secure?
 >> ECC’s security deeply depends on correct implementation and the use of appropriate parameters, such as the size of the underlying elliptic curve and the ECC key length. The encryption will be vulnerable to attacks if weak parameters or inadequate key size are chosen.
 
-ECC vs Rivest-Shamir-Adleman (RSA)
+**ECC vs Rivest-Shamir-Adleman (RSA)**
 | ECC | RSA |
 | --- | --- |
 |Relies on solving the Elliptic Curve Discrete logarithm | Strength depends on the difficulty of factoring large numbers|
@@ -54,14 +59,13 @@ ECC vs Rivest-Shamir-Adleman (RSA)
 A 256-bit ECC key is = to a 3072-bit RSA key| - |
 |Takes less computational power, bandwidth and memory. More efficient and faster|Efficient with a smaller key size, but compromise its security|
 |ECC gaining popularity as more efficient and sustainable alternative.|Has been used for several decades and is well-established and standardized in many system.|
-
 - ECC features smaller ciphertexts, keys and signatures, and faster generation of keys and signature. Its decryption and encryption speeds are moderately fast.
 - ECC enable lower latency than inverse througout by computing signatures in 2 steage.
 - ECC features strong protocols for authenticated key exchange and support for the tech is strong.
 
-Real Life applications of ECC
+**Real Life applications of ECC**
 1. Communication Protocols: ECC protects the confidentiality, integrity and authenticity of network data. Communication protocols, such as Transport Layer Security (TLS) and Secure Shell (SSH), often take advantage of ECC.
-> [!Tips]
+> [!Tip]
 > Eg, TLS handshake uses ECC for key exchange and ECC-based digital certificates for server authentication.
 2. Digital Signatures: ECC is handy for generating and verifying digital signatures in e-commerce, financial and other systems. It ensures the authenticity and integrity of digital documents, contracts and transactions.
 3. Payment systems: ECC protects payment systems, including contactless and mobile payment solutions. From securing key exchange to encrypting transaction data and verifying the authenticity of the data’s owner, it helps to secure transactions, protect sensitive financial information, and ensure the integrity of payment processes.
@@ -79,18 +83,18 @@ Real Life applications of ECC
 1. How Secure is ECC
 Side-channel attacks including differential power attacks, fault analysis, simple power attacks, and simple timing attacks, typically result in information leaks. Simple countermeasures exist for all types of **side-channel attacks**.
 
-> [!Tips]
+> [!Tip]
 > 1. Acoustic Cryptanalysis
 >> Emit sounds when performing operations (Such as encryption or decryption), attackers can correlate them with specific operations and deduce information about the system. For instance, keystrokes on a keyboard can emit distinct sounds, which could be used to steal a user’s passphrase.
-> 3. Power Analysis
+> 2. Power Analysis
 >> Consume varying amounts of power during different operations. By monitoring power consumption, attackers can infer details about the cryptographic process.Differential Power Analysis (DPA) is a well-known technique where attackers analyze power traces to extract secret keys.
-> 4. Timing Attacks
+> 3. Timing Attacks
 >> Take different amounts of time to execute different operations. Attackers measure execution times and exploit variations to deduce information. Eg, timing attacks can reveal secret keys by observing how long an operation takes
-> 5. Electromagnetic Radiation (EM) Attacks
+> 4. Electromagnetic Radiation (EM) Attacks
 >> Emit radiation during operations. Sophisticated attackers can capture this radiation and analyze it to extract sensitive information. EM attacks are particularly effective against smart cards and hardware security modules
-> 6. Cache Timing Attacks
+> 5. Cache Timing Attacks
 >> Modern processors use caches to speed up memory access. By observing cache behaviour during cryptographic operations, attackers can infer information. Eg, cache timing attackers can reveal secret keys by analyzing cache hits and misses.
-> 7. Fault Attacks
+> 6. Fault Attacks
 >> Intentionally inducing faults (eg, voltage glitches) during cryptographic operations. Analyzing the faulty results can reveal information about the system. Fault attack can lead to key extraction or even bypassing securing mechanisms.
 
 Any additional type of ECC attack is the **twist-security attack/fault attack**. Such attacks may include invalid-curve attaks and small-subgroup attacks, may result in the private key of the victim leaking out. Twist-security attacks are typically simply mitigated with careful parameter validation and curve choices.
@@ -98,7 +102,7 @@ Any additional type of ECC attack is the **twist-security attack/fault attack**.
 2. What is an Elliptic Curve Digital Signature?
 An Elliptic Curve Digital Signature Algorithm (ECDSA) uses ECC keys to ensure each user is unique and every transaction is secure. Although this kind of Digital Signing Algorithm (DSA) offers functional outcomes as other DSAs, ECC uses smaller, which is more efficient.
 
-> [!Tips]
+> [!Tip]
 > 1. Twist-Security Attack
 >> A twist is a related curve that shares some properties with the original curve. This attacks exploit this relationship between the original curve and its twist. The attacker computers certain values modulo specific parameters and uses mathematical techniques to extract information. These attacks can result in the leakage of the victim’s private key.
 
@@ -133,7 +137,7 @@ PKI is a framework of roles, policies, hardware, software, and procedures needed
 - Rely on digital certificates to link public keys to their owners. These certificates serve as credentials to confirm user identities during transactions
 > passports verifying citizenship. Protecting the integrity of digital certificates for maintaining system trustworthiness, as they are used to identify recipients of encrypted data and verify the identity of information signer.
 - In the context of PKI, a digital certificate, issued by a Certificate Authority (CA), binds a public key to an entity (like an individual or organization), ensuring the public key’s authenticity.
-> [!Tips]
+> [!Tip]
 > Certificate Authorities (CAs) issue these digital credentials, compromising PKI security, However, CAs can be targets of sophisticated attacks. To safeguard against threats, PKIs implement physical and logical controls, including hardware security modules (HSM), to fortify their integrity
 
 **Applications in Blockchain**
@@ -146,6 +150,7 @@ PKI is a framework of roles, policies, hardware, software, and procedures needed
 
 ## Public Key Cryptography/Asymmetric Cryptography
 Public keys are those can be widely share, and private keys are known only to their owners.
+
 ![ASYM](https://github.com/zhenHai1021/Tijarah-Blockchain-Notes/assets/113818064/f65b1bba-7398-43e7-b2dc-669d6bca75a4)
 
 This key pair insist **two functions**: Authentication and Encryption

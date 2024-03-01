@@ -105,7 +105,6 @@ An Elliptic Curve Digital Signature Algorithm (ECDSA) uses ECC keys to ensure ea
 > [!Tip]
 > 1. Twist-Security Attack
 >> A twist is a related curve that shares some properties with the original curve. This attacks exploit this relationship between the original curve and its twist. The attacker computers certain values modulo specific parameters and uses mathematical techniques to extract information. These attacks can result in the leakage of the victim’s private key.
-
 > 2. Invalid-Curve Attacks
 >> In an invalid-curve attack, the attacker deliberately sends a point that does not lie on the elliptic curve. The scalar multiplication device (used in ECC operations) processes this invalid pointBy choosing the invalid point, the attacker aims to exploit vulnerabilities in the ECC implementation. Invalid-curve attacks can lead to security breaches and the exposure of private keys
 

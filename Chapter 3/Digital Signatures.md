@@ -73,7 +73,7 @@ A digital signature is a cryptographic technique analogous to a handwritten sign
 > [!Note]
 > Malleability means quality of smtg can be shaped into something else without breaking.
 
-. Authenticating a public key: **Public key** can be used to **verify authenticity** of a signed message, but not the other way around, signed message cannot be used to verify authenticity of a public key. In some signature schemes, **given** a **signed message**, it is easy to **construct a public key** under which the **signed message** will pass **verification**, even without knowledge of the private key that was used to make the signed message in the first place.
+3. Authenticating a public key: **Public key** can be used to **verify authenticity** of a signed message, but not the other way around, signed message cannot be used to verify authenticity of a public key. In some signature schemes, **given** a **signed message**, it is easy to **construct a public key** under which the **signed message** will pass **verification**, even without knowledge of the private key that was used to make the signed message in the first place.
 
 > [!WARNING]
 > Security Consideration: 

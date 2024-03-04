@@ -73,7 +73,7 @@ A digital signature is a cryptographic technique analogous to a handwritten sign
 > [!Note]
 > Malleability means quality of smtg can be shaped into something else without breaking.
 
-4. Authenticating a public key: **Public key** can be used to **verify authenticity** of a signed message, but not the other way around, signed message cannot be used to verify authenticity of a public key. In some signature schemes, **given** a **signed message**, it is easy to **construct a public key** under which the **signed message** will pass **verification**, even without knowledge of the private key that was used to make the signed message in the first place.
+. Authenticating a public key: **Public key** can be used to **verify authenticity** of a signed message, but not the other way around, signed message cannot be used to verify authenticity of a public key. In some signature schemes, **given** a **signed message**, it is easy to **construct a public key** under which the **signed message** will pass **verification**, even without knowledge of the private key that was used to make the signed message in the first place.
 
 > [!WARNING]
 > Security Consideration: 
@@ -82,7 +82,6 @@ A digital signature is a cryptographic technique analogous to a handwritten sign
 ## Some digital signature algorithms
 1. ECDSA (Elliptic Curve Digital Signature Algorithm): Widely used in blockchains, including Bitcoin & Ethereum. Offers strong security with relatively short key lengths, making it efficient for use in resource constrained environments like blockchain networks. ECDSA relies on the difficulty of solving the problem in ECC.
 ECDSA used for Transport Layer Security (TLS), the successor to Secure Sockets Layer (SSL), by encrypting connections between web browsers and a web application. The encrypted connection of a HTTPS website[^1].
-
 
 2. RSA (Rivest-Shamir-Adleman): RSA relies on the difficulty of factoring large prime numbers, offering strong security for digital signatures. However, RSA key lengths tend to be longer compared to ECDSA, which can impact performance and efficiency in blockchain networks.
    

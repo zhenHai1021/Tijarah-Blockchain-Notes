@@ -52,24 +52,28 @@ A digital signature is a cryptographic technique analogous to a handwritten sign
   > 5. With the authenticity and integrity of the message **verified**, the central office can **proceed** to act on the instructions provided in the message, such as updating the account balance.
 > Authentication ensures if the message is intercepted by a malicious entity during transit, they would not be able forge or modify the message without detection. The use of digital signatures provides a secure method for authentication of the origin message for trust and security.
 
-3. Non-repudiation: The signer cannot deny their intention of the transaction since the DS uniquely binds them to it. An entity that has signed some information cannot at a later time deny having signed it. Similarly, access to the access public key only does not enable a fraudulent party to fake a valid signature. 
-> ensuring that secret keys used for authentication and non-repudiation have not been revoked before their usage. Revocation of key-pairs to prevent leaked secret keys from being exploited by unauthorized. 
->> Similar to how a vendor checks the validity of a credit card online before accepting payment, verifying the revocation status of a key-pair requires an "online" check through methods like certificate revocation lists. Failure to revoke stolen key pairs promptly can lead to unauthorized use, such as signing bogus certificates for malicious purposes, which may only be discovered after the fact.
+3. Non-repudiation: The signer cannot **deny** their intention of the transaction since the DS uniquely binds them to it. An entity that has signed some information cannot at a later time deny having signed it. Similarly, access to the access public key only does not enable a fraudulent party to fake a valid signature. Ensuring that secret keys used for authentication and non-repudiation have not been revoked before their usage. Revocation of key-pairs to prevent leaked secret keys from being exploited by unauthorized. 
+> [!Note]
+>  Similar to how a vendor checks the validity of a credit card online before accepting payment, verifying the revocation status of a key-pair requires an "online" check through methods like certificate revocation lists. Failure to revoke stolen key pairs promptly can lead to unauthorized use, such as signing bogus certificates for malicious purposes, which may only be discovered after the fact.
 
-4. Security: DS are virtually impossible to forge, provided the private key remains secure.
+4. Security: DS are virtually **impossible to forge**, provided the p**rivate key remains secure**.
 
-Applications in Blockchain
-Transaction Verification: In cryptocurrencies, every transaction is signed by the sender’s private key and verified by the network, ensuring that the transaction is initiated by the rightful owner of the digital assets. 
-Smart Contracts: In blockchain platforms like Ethereum, digital signatures are used to execute smart contracts, ensuring that the contract is executed by the parties involved without repudiation.
-Identity Verification: Blockchain applications that require identity management use digital signatures to authenticate user actions and secure personal data.
+## Applications in Blockchain
+1. Transaction Verification: In cryptocurrencies, every transaction is signed by the **sender’s private key** and **verified** by the network, ensuring that the transaction is initiated by the **rightful owner** of the digital assets.
+ 
+2. Smart Contracts: In blockchain platforms like Ethereum, digital signatures are used to **execute smart contracts**, ensuring that the contract is executed by the parties involved without repudiation.
+  
+3. Identity Verification: Blockchain applications that require **identity management** use digital signatures to **authenticate** user actions and secure personal data.
 
-Digital signatures limitation
+## Digital signatures limitation
 1. Replays: A digital signature scheme on its own does not prevent a valid signed message from being recorded and then maliciously reused in a replay attack.
 > Eg, the branch office may request that bank transfer be issued once in a signed message. If the bank doesn't use a system of transaction ids in their messages to detect which transfers have already happened, someone could illegitimately reuse the same signed message many times to drain an account.
 
 2. Uniqueness and malleability of signatures: A signature itself cannot be used to uniquely identify the message it signs, in some signature schemes, every message has a large number of possible valid signatures from the same signer, and it may be easy, even without knowledge of the private key, to transform one valid signature into another.
+> [!Note]
+> Malleability means quality of smtg can be shaped into something else without breaking.
 
-3. Authenticating a public key: Public key can be used to verify authenticity of a signed message, but not the other way around, signed message cannot be used to verify authenticity of a public key. In some signature schemes, given a signed message, it is easy to construct a public key under which the signed message will pass verification, even without knowledge of the private key that was used to make the signed message in the first place.
+4. Authenticating a public key: **Public key** can be used to **verify authenticity** of a signed message, but not the other way around, signed message cannot be used to verify authenticity of a public key. In some signature schemes, **given** a **signed message**, it is easy to **construct a public key** under which the **signed message** will pass **verification**, even without knowledge of the private key that was used to make the signed message in the first place.
 
 > [!WARNING]
 > Security Consideration: 

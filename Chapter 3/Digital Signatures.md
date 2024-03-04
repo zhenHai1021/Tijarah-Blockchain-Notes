@@ -65,7 +65,7 @@ A digital signature is a cryptographic technique analogous to a handwritten sign
   
 3. Identity Verification: Blockchain applications that require **identity management** use digital signatures to **authenticate** user actions and secure personal data.
 
-## Digital signatures limitation
+## Limitation
 1. Replays: A digital signature scheme on its own does not prevent a valid signed message from being recorded and then maliciously reused in a replay attack.
 > Eg, the branch office may request that bank transfer be issued once in a signed message. If the bank doesn't use a system of transaction ids in their messages to detect which transfers have already happened, someone could illegitimately reuse the same signed message many times to drain an account.
 
@@ -74,6 +74,9 @@ A digital signature is a cryptographic technique analogous to a handwritten sign
 > Malleability means quality of smtg can be shaped into something else without breaking.
 
 3. Authenticating a public key: **Public key** can be used to **verify authenticity** of a signed message, but not the other way around, signed message cannot be used to verify authenticity of a public key. In some signature schemes, **given** a **signed message**, it is easy to **construct a public key** under which the **signed message** will pass **verification**, even without knowledge of the private key that was used to make the signed message in the first place.
+4. Theft of keys: lost or theft of keys is one of the major drawback of digital signature. The use of vulnerable storage.
+5. Additional cost: To effectively use digital signatures sender and receiver needs to buy digital certificate and verification software at a cost.
+6. Need for standard: There is a strong need for a standard through which these different methods can intetract.
 
 > [!WARNING]
 > Security Consideration: 

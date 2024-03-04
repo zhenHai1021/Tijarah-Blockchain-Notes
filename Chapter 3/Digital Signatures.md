@@ -86,6 +86,12 @@ ECDSA used for Transport Layer Security (TLS), the successor to Secure Sockets L
 2. RSA (Rivest-Shamir-Adleman): RSA relies on the difficulty of factoring large prime numbers, offering strong security for digital signatures. However, RSA key lengths tend to be longer compared to ECDSA, which can impact performance and efficiency in blockchain networks.
    
 3. EdDSA (Edwards-curve Digital Signature Algo): EdDSA efficiency and its security properties. It is based on twisted Edwards curves, offering fast signature generation and verification with strong security guarantees. EdDSA is well suited for use in decentralized systems like blockchain due to its performance advantages and resistance to side-channel attacks.
+  
+4. ElGamal Signature scheme: DS is based on the algebraic properties of modular exponentiation together with the diffculty of computing discrete logarithms. This is rarely used in practice.
+ 
+5. Schnorr signature: ECDSA lacks one important property i.e. there is no efficient way to compress and verify signatures together. Schnorr signature schemes are provably secure with standard crytographic assumptions, non-malleable and provide linearity.
+ 
+6. BLS Signature: BLS DS relies on pairings-based cryptography. BLS signatures enable key and signature aggregation but they are deterministic, allow signature aggregation across an entire block, and are overall 50% smaller. 
 
 ## Conclusion
 Digital Signatures are crucial in maintaining the trustworthiness of blockchain. They provide a secure and efficient means of ensuring transactions authenticity and integrity. By leveraging cryptographic principles, digital signatures enable the secure and transparent operation of blockchains, underpinning the trust in decentralized digital transactions and interactions. As blockchain technology continues to evolve and integrate into various sectors, the role of digital signatures as a means of securing and validating data becomes increasingly vital.

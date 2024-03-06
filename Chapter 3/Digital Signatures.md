@@ -1,6 +1,8 @@
 # Digital Signatures
 Ensuring authenticity and integrity of transactions within a distributed network. They serve as a cryptographic tool that not only secure transactions but also establishes a layer of accountability and trust among participants.
 
+KEYWORD
+
 Understanding Digital Signatures
 A digital signature is a cryptographic technique analogous to a handwritten signature or a stamped seal, but with far more inherent security built into its design. It is a mathematical scheme for demonstrating the authenticity of digital messages or documents. 
 
@@ -42,7 +44,7 @@ A digital signature is a cryptographic technique analogous to a handwritten sign
 ## Key Properties of Digital Signatures in Blockchain
 1. Integrity: Ensure the **integrity of a transaction** by certifying that the contents have not been **altered in transit**. Without the hash function, the text “to be signed” may have to split (separated) in blocks small enough for the signature scheme to act on them directly. However, the receiver of the signed blocks is not able to recognize if all the blocks are present and in the appropriate order.
    
-2. Authentication: They provide proof of the origin of the transaction, affirming that it was indeed created by the stated sender.
+2. Authentication: They provide **proof of the origin** of the transaction, affirming that it was **indeed created** by the **stated sender**.
 > [!Note]
 > A branch office bank want to send instructions to the central office to change the balance of an account. To ensure the authenticity and integrity of the message, the branch office use its private key to generate a digital signature for the message.
   > 1. The branch office **creates** the** message**.
@@ -50,7 +52,7 @@ A digital signature is a cryptographic technique analogous to a handwritten sign
   > 3.The signed message is then **transmitted** to the central office along with the **digital signature**.
   > 4. Upon **receiving** the message, the central office uses the **public key** from the branch office to **verify** the digital signature. If the verification is **successful**, it **confirms** that the message was indeed sent by the branch office and has no tampered with during transit.
   > 5. With the authenticity and integrity of the message **verified**, the central office can **proceed** to act on the instructions provided in the message, such as updating the account balance.
-> Authentication ensures if the message is intercepted by a malicious entity during transit, they would not be able forge or modify the message without detection. The use of digital signatures provides a secure method for authentication of the origin message for trust and security.
+> Authentication ensures if the message is intercepted by a malicious entity during transit, they would not be able forge or modify the message without detection. The use of digital signatures provides a secure authentication of the origin message for trust and security.
 
 3. Non-repudiation: The signer cannot **deny** their intention of the transaction since the DS uniquely binds them to it. An entity that has signed some information cannot at a later time deny having signed it. Similarly, access to the access public key only does not enable a fraudulent party to fake a valid signature. Ensuring that secret keys used for authentication and non-repudiation have not been revoked before their usage. Revocation of key-pairs to prevent leaked secret keys from being exploited by unauthorized. 
 > [!Note]

@@ -99,6 +99,8 @@ ECDSA used for Transport Layer Security (TLS), the successor to Secure Sockets L
 ## Conclusion
 Digital Signatures are crucial in maintaining the trustworthiness of blockchain. They provide a secure and efficient means of ensuring transactions authenticity and integrity. By leveraging cryptographic principles, digital signatures enable the secure and transparent operation of blockchains, underpinning the trust in decentralized digital transactions and interactions. As blockchain technology continues to evolve and integrate into various sectors, the role of digital signatures as a means of securing and validating data becomes increasingly vital.
 
+![Untitled-2024-02-26-1801](https://github.com/zhenHai1021/Tijarah-Blockchain-Notes/assets/113818064/f5235bd3-e4eb-495b-a504-d6c04b0ac72e)
+
 ---
 # REFERENCE
 [^1]: [ECC Digital Signature Algorithm](https://www.hypr.com/security-encyclopedia/elliptic-curve-digital-signature-algorithm#:~:text=The%20Elliptic%20Curve%20Digital%20Signature%20Algorithm%20(ECDSA)%20is%20a%20Digital,public%20key%20cryptography%20(PKC).)

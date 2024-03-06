@@ -82,6 +82,7 @@ Merkle Tree/Hash Tree encodes blockchain data efficiently and securely, which en
 ![GENB](https://github.com/zhenHai1021/Tijarah-Blockchain-Notes/assets/113818064/d506664a-ee3c-4c22-b623-90517b0a90f0)
 
 Refer: Website Link [^2]
+
 Each block has its **ID value**, which is the **hash of its header** fields. Another part is the **previous block ID**. Linking with the previous and next block ID, the blocks form a BLOCKCHAIN. By embedding Merkle Root, it makes an **immutable record** of transactions in the block.
 Eg, block header contains:
 - Merkle Root of all transactions in the block

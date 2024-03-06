@@ -1,7 +1,8 @@
 # Digital Signatures
-Ensuring authenticity and integrity of transactions within a distributed network. They serve as a cryptographic tool that not only secure transactions but also establishes a layer of accountability and trust among participants.
+KEYWORD:
+Digital Signature, Private Key/Public Key, Authentication, Security
 
-KEYWORD
+Ensuring authenticity and integrity of transactions within a distributed network. They serve as a cryptographic tool that not only secure transactions but also establishes a layer of accountability and trust among participants.
 
 Understanding Digital Signatures
 A digital signature is a cryptographic technique analogous to a handwritten signature or a stamped seal, but with far more inherent security built into its design. It is a mathematical scheme for demonstrating the authenticity of digital messages or documents. 

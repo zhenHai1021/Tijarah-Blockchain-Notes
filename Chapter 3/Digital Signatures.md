@@ -53,7 +53,7 @@ Digital Signatures ensure authenticity and integrity of transactions in distribu
   > 5. With the authenticity and integrity of the message **verified**, the central office can **proceed** to act on the instructions provided in the message, such as updating the account balance.
 > Authentication ensures the message transmission from malicious entity intercept, they would not be able forge or modify the message without detection. The use of DS provides a secure authentication of the origin message for trust & security.
 
-3. Non-repudiation: The signer cannot **deny** their intention of the transaction since the DS uniquely binds them to it. An entity cannot at a later time deny having signed information. Access to public key alone does not enable forging valid signatures. Ensuring secret keys used for authentication and non-repudiation have not been revoked before use. Revocation of key-pairs prevent exploitation of leaked secret keys by unauthorized
+3. Non-repudiation: The signer cannot **deny** their intention of the transaction since the DS uniquely binds them. Cannot later deny signing information. Access to public key alone does not enable forging valid signatures. Ensuring secret keys used for authentication and non-repudiation have not been revoked before use. Revocation of key-pairs prevent exploitation of leaked secret keys by unauthorized parties.
 > [!Note]
 >  Similar to vendors checking the credit card validity online before accepting payment, verifying revocation status of a key-pair requires an "online" check through methods like certificate revocation lists. Failure to revoke stolen key pairs promptly can lead to unauthorized use, such as signing bogus for malicious purposes, which may only be discovered after the fact.
 
@@ -84,12 +84,12 @@ Digital Signatures ensure authenticity and integrity of transactions in distribu
 > The security of a digital signature in blockchain is tied to the security of the private key. If a private key is compromised, it can lead to unauthorized transactions and breaches. Therefore, robust key management practices are essential.
 
 ## Some digital signature algorithms
-1. ECDSA (Elliptic Curve Digital Signature Algorithm): Widely used in blockchains, including Bitcoin & Ethereum. Offers strong security with relatively short key lengths, making it efficient for use in resource constrained environments like blockchain networks. ECDSA relies on the difficulty of solving the problem in ECC.
-ECDSA used for Transport Layer Security (TLS), the successor to Secure Sockets Layer (SSL), by encrypting connections between web browsers and a web application. The encrypted connection of a HTTPS website[^1].
+1. ECDSA (Elliptic Curve Digital Signature Algorithm): Widely used in blockchains, including Bitcoin & Ethereum. Strong security with short key lengths, efficient for resource constrained blockchain networks. ECDSA relies on the difficulty of solving in ECC.
+ECDSA used for Transport Layer Security (TLS), the successor to Secure Sockets Layer (SSL), web browsers and a web application connections. Enables encrypted HTTPS website[^1].
 
 2. RSA (Rivest-Shamir-Adleman): RSA relies on the difficulty of factoring large prime numbers, offering strong security for digital signatures. However, RSA key lengths tend to be longer compared to ECDSA, which can impact performance and efficiency in blockchain networks.
    
-3. EdDSA (Edwards-curve Digital Signature Algo): EdDSA efficiency and its security properties. It is based on twisted Edwards curves, offering fast signature generation and verification with strong security guarantees. EdDSA is well suited for use in decentralized systems like blockchain due to its performance advantages and resistance to side-channel attacks.
+3. EdDSA (Edwards-curve Digital Signature Algo): Efficient with fast signature generation/verification and strong security guarantees. Based on twisted Edwards curves. Well-suited for decentralized blockchain systems due to performance advantages and resistance to side-channel attacks.
   
 4. ElGamal Signature scheme: DS is based on the algebraic properties of modular exponentiation together with the diffculty of computing discrete logarithms. This is rarely used in practice.
  
@@ -98,7 +98,7 @@ ECDSA used for Transport Layer Security (TLS), the successor to Secure Sockets L
 6. BLS Signature: BLS DS relies on pairings-based cryptography. BLS signatures enable key and signature aggregation but they are deterministic, allow signature aggregation across an entire block, and are overall 50% smaller. 
 
 ## Conclusion
-Digital Signatures are crucial in maintaining the trustworthiness of blockchain. They provide a secure and efficient means of ensuring transactions authenticity and integrity. By leveraging cryptographic principles, digital signatures enable the secure and transparent operation of blockchains, underpinning the trust in decentralized digital transactions and interactions. As blockchain technology continues to evolve and integrate into various sectors, the role of digital signatures as a means of securing and validating data becomes increasingly vital.
+Digital Signatures crucial for blockchain trustworthiness. Provide secure, efficient means ensuring transaction authenticity and integrity. Leveraging cryptography for secure, transparent blockchain operation. Enable trust in decentralized digital transations. Role vital as blockchain integrates across sectors to secure and validate data.
 
 ![Untitled-2024-02-26-1801](https://github.com/zhenHai1021/Tijarah-Blockchain-Notes/assets/113818064/f5235bd3-e4eb-495b-a504-d6c04b0ac72e)
 

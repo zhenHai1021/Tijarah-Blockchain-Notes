@@ -2,10 +2,7 @@
 KEYWORD:
 Digital Signature, Private Key/Public Key, Authentication, Security
 
-Ensuring authenticity and integrity of transactions within a distributed network. They serve as a cryptographic tool that not only secure transactions but also establishes a layer of accountability and trust among participants.
-
-Understanding Digital Signatures
-A digital signature is a cryptographic technique analogous to a handwritten signature or a stamped seal, but with far more inherent security built into its design. It is a mathematical scheme for demonstrating the authenticity of digital messages or documents. 
+Digital Signatures ensure authenticity and integrity of transactions in distributed networks. Cryptographic tool security transactions, establishing accountability and trust among participants. Analogous to handwritten signatures with enhanced security. Mathematical scheme demonstrating authenticity of digital messages/documents.
 
 ![DS(AB)](https://github.com/zhenHai1021/Tijarah-Blockchain-Notes/assets/113818064/44b9253a-5b6e-4c7f-a617-9e32f64a0493)
 
@@ -25,7 +22,8 @@ A digital signature is a cryptographic technique analogous to a handwritten sign
         A digital signature is created using a private key to ‘sign’ a transaction or a piece of data.
       </li>
       <li>
-        When a user initiates a blockchain transaction (like sending cryptocurrency), they generate a digital signature using their private key. This process involves creating a hash of the transaction data and then encrypting the hash with the private key.
+        User initiates blockchain transaction, generates digital signature using private key.
+        Process: Create hash of transaction data, encrypt hash with private key.
       </li>
     </ul>
   </li>
@@ -36,14 +34,14 @@ A digital signature is a cryptographic technique analogous to a handwritten sign
         The verification of a digital signature is done using the signer’s public key.
       </li>
       <li>
-        When other participants in the blockchain network receive the transaction, they use the sender’s public key to decrypt the signature. They independently compute the hash of the original transaction data. If this hash matches the decrypted hash from the signature, it confirms that the transaction is authentic and has not been tampered with.
+        Other blockchain participants receive transaction, use sender's public key to decrypt signature. Independently compute hash of original transaction data. If hash matches decrypted hash from signature, confirms transaction authentic and untampered.
       </li>
     </ul>
   </li>
 </ol>
 
 ## Key Properties of Digital Signatures in Blockchain
-1. Integrity: Ensure the **integrity of a transaction** by certifying that the contents have not been **altered in transit**. Without the hash function, the text “to be signed” may have to split (separated) in blocks small enough for the signature scheme to act on them directly. However, the receiver of the signed blocks is not able to recognize if all the blocks are present and in the appropriate order.
+1. Integrity: Ensure the **integrity of a transaction** by certifying that the contents have not been **altered in transit**. Hash function allows signing entire message without splitting into blocks, enabling receiver to verify all blocks are present and in correct order.
    
 2. Authentication: They provide **proof of the origin** of the transaction, affirming that it was **indeed created** by the **stated sender**.
 > [!Note]
@@ -53,9 +51,9 @@ A digital signature is a cryptographic technique analogous to a handwritten sign
   > 3.The signed message is then **transmitted** to the central office along with the **digital signature**.
   > 4. Upon **receiving** the message, the central office uses the **public key** from the branch office to **verify** the digital signature. If the verification is **successful**, it **confirms** that the message was indeed sent by the branch office and has no tampered with during transit.
   > 5. With the authenticity and integrity of the message **verified**, the central office can **proceed** to act on the instructions provided in the message, such as updating the account balance.
-> Authentication ensures if the message is intercepted by a malicious entity during transit, they would not be able forge or modify the message without detection. The use of digital signatures provides a secure authentication of the origin message for trust and security.
+> Authentication ensures the message transmission from malicious entity intercept, they would not be able forge or modify the message without detection. The use of DS provides a secure authentication of the origin message for trust & security.
 
-3. Non-repudiation: The signer cannot **deny** their intention of the transaction since the DS uniquely binds them to it. An entity that has signed some information cannot at a later time deny having signed it. Similarly, access to the access public key only does not enable a fraudulent party to fake a valid signature. Ensuring that secret keys used for authentication and non-repudiation have not been revoked before their usage. Revocation of key-pairs to prevent leaked secret keys from being exploited by unauthorized. 
+3. Non-repudiation: The signer cannot **deny** their intention of the transaction since the DS uniquely binds them to it. An entity cannot at a later time deny having signed information. Access to public key alone does not enable forging valid signatures. Ensuring secret keys used for authentication and non-repudiation have not been revoked before use. Revocation of key-pairs prevent exploitation of leaked secret keys by unauthorized
 > [!Note]
 >  Similar to how a vendor checks the validity of a credit card online before accepting payment, verifying the revocation status of a key-pair requires an "online" check through methods like certificate revocation lists. Failure to revoke stolen key pairs promptly can lead to unauthorized use, such as signing bogus certificates for malicious purposes, which may only be discovered after the fact.
 

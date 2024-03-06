@@ -16,7 +16,7 @@ Each **leaf node** is a **hash of transaction data**, and a **non-leaf node** is
 > [!Tip]
 > If transactions are in **odd numbers**, then the last hash will be repeated once to generate an even number of leaf nodes.
 
-Merkle Tree/Hash Tree encodes blockchain data efficiently and securely, which enable quick verification and movement of data in P2P blockchain networks. Transactions on the blockchain have associated hashes. Hashes organized in a tree-like structure with parent-child relations. All **transaction hashes** in a block are hashed to **produce a Merkle Root**. An upside-down binary tree structure, with each node connecting to two nodes below. **Root hash** connects to hashes at level one, each connecting to **two hashes** at **leaf-level**. Structure continues depending on the **no of transactions hashes**.
+Merkle Tree/Hash Tree encodes blockchain data efficiently and securely for quick verification and  P2P data transfer. Transactions have associated hashes organized in a tree-like structure with parent-child relations. All **transaction hashes** hashed to **produce a Merkle Root**. An upside-down binary tree, each node connecting to two nodes below. **Root hash** connects to hashes at level one, each connecting to **two hashes** at **leaf-level**. Structure scales based on **no of transactions hashes**.
 > [!Tip]
 > **Merkle root** is the only **one hash remains** of all the hashes of all the transactions that are part of a block in the blockchain network.
 
@@ -61,17 +61,17 @@ Merkle Tree/Hash Tree encodes blockchain data efficiently and securely, which en
 4. Information: Tiny information across networks, such that **MT can be broken down** into **small pieces of data** for verification. Instead of transmitting the entire transaction history.
 5. Verification: Verifying the data’s integrity takes only a few moments. It reduces the amount of **memory** for verification. Since **Proof of Verification** does not require transferring **large amounts** of data over the network. Which enables **P2P** by **quickly verifying** transactions.
 6. Transparency and traceability: Enhances the overall visibility of data within the network, fostering trust and accountability.
-7. Tampering Detection: Check whether any transactions have been tampered with. Since transactions are **stored** in MT, which **stores the hash** of each node in the **top parent node**, any changes to the transaction details will propagate to the hashes in the **upper levels** and finally to the **Merkle root**. A miner can compare the **Merkle root in the header** with the **Merkle root stored in the data part** of the block and easily detect this manipulation.
+7. Tampering Detection: Transactions **stored** in MT, which **stores hash** of each node in the **top parent node**, any changes to the transaction details will propagate to the hashes in the **upper levels** and finally to the **Merkle root**. Miner compares **Merkle root in the header** with the **root stored in block data part**, easily detect this manipulation.
 
 **Cons of MT in Blockchain** [^1]
 1. Overhead: MT require **additional computation** and **storage resource overheads** to create and verify the tree structure
 2. Single point of failure: If the root node of the Merkle tree is compromised, the entire tree is compromised too.
 
 **Role in Blockchain**
-1. **Efficiency in Data Verification**: Merkle trees allow for efficient and secure verification of **large datasets** common in blockchain. They enable **quick** and lightweight **verification** of whether a **specific transaction** is included **in a block**.
-2. **Security and Integrity**: By incorporating cryptographic hashing, MT help ensure the integrity of the blockchain data. Any **alteration** in a transaction would require **recomputation** of all **subsequent hashes up** to the Merkle Root, which is **computational impractical**.
-3. Scalability: With enormous transaction amounts, Merkle Tree offers a way to scale efficiently. They reduce the **amount of data** needed to be transmitted, stored, and processed when **verifying transactions**. MT organizes and condenses transaction information, allowing nodes to **verify transactions** selectively **without overwhelming storage requirements**.
-4. Proof of data: Providing that **tiny amounts of information** across the network is all that is **required** for a transaction **to be valid**. It enables the **tree** that **both ledger variations** are identical in terms of nominal computer power and network bandwidth.
+1. **Efficiency in Data Verification**: Merkle trees enable **quick** and lightweight **verification** of whether a **specific transaction** is included **in a block**, efficiently handling large blockchain datasets.
+2. **Security and Integrity**: By incorporating cryptographic hashing, MT ensure data integrity. Any **alteration** in a transaction requires **recomputation** all **subsequent hashes up** to the Merkle Root, **computational impractical**.
+3. Scalability: With enormous transaction amounts, Merkle Tree offers efficient scaling. Reduce **data needed** when **verifying transactions**. MT organizes and condenses transaction information, allowing selectively **verify transactions without overwhelming storage requirements**.
+4. Proof of data: Only **tiny amounts of information** required across the network for a transaction **to be valid**. Enables the **tree** that **both ledger variations** to be identical with nominal computing power and bandwidth.
 
 ![MR B](https://github.com/zhenHai1021/Tijarah-Blockchain-Notes/assets/113818064/b747decf-a581-4c41-9ae3-dd102721ba5d)
 

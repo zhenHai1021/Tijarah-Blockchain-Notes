@@ -11,11 +11,11 @@ Consensus mechanisms has its unique features, benefits and drawbacks, making it 
 
 # Proof of Work
 Short:
-- Miners use computational power to find a "target hash"/value (nonce) for the next block.
-- Puzzle: Involves performing a hash function repeatedly, altering the nonce each time, until the output meets the network criteria (like a leading zeros)
-- Miners verify transactions and create new blocks
-- Verification process involves solving an algo, that combines previous block hash with new block header hash. Resulting hash must match target value to add block to chain
-- The first miner to find the target hash can add the next block then rewarded
+- Miners use **computational power** to find a "target hash"/value (**nonce**) for the next block.
+- **Puzzle**: Involves performing a hash function repeatedly, altering the nonce each time, until the output meets the network criteria (like a leading zeros)
+- Miners **verify** transactions and **create** new blocks
+- Verification process involves **solving** an algo, that combines previous block hash with new block header hash. Resulting hash must match target value to add block to chain
+- The **first miner** to find the target hash can **add the next block** then **rewarded**
 - Finding the target hash is difficult (requires computation) but verifying it is easy
 - This asymmetry prevents manipulation while allowing decentralized consensus.
 - Mining difficulty adjusts to control block time based on computational power.

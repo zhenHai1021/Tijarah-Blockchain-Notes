@@ -44,7 +44,7 @@ System ability to continue operating even if some of its nodes fail or act malic
 
 <img src="https://assets-global.website-files.com/6433e6f821ae13dd37394322/6439167c0f24b24248245731_syb1a.png" width=400px height=400px>
 
-#Istanbul Byzantine Fault Tolerance (IBFT)
+# Istanbul Byzantine Fault Tolerance (IBFT)
 Ensure single, agreed-upon ordering transactions in blockchain, aims for high throughput and low latency optimizing communication and consensus process. 
 - Well-suited for consortium and private where participants are trusted.
 - Designed to work in Ethereum-based

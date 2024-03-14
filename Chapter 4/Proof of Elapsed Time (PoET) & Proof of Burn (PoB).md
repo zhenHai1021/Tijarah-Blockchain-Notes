@@ -80,6 +80,7 @@ Reference[^5][^6][^7]
 [^2]: https://www.geeksforgeeks.org/proof-of-elapsed-time-poet-in-blockchain/ 
 [^3]: https://www.investopedia.com/terms/p/proof-elapsed-time-cryptocurrency.asp#:~:text=Proof%20of%20elapsed%20time%20(PoET)%20is%20a%20consensus%20mechanism%20often,they%20are%20allowed%20to%20join. 
 [^4]: https://www.investopedia.com/terms/p/proof-burn-cryptocurrency.asp#:~:text=Proof%20of%20burn%20is%20one,any%20cryptocurrency%20coin%20double-spending. 
-[^5]: Proof of Burn Consensus Algorithm in Blockchain - GeeksforGeeks 
-[^6]: Proof of Burn (PoB) | Learn Crypto | Coinmerce
-[^7]: What are proof-of-burn (PoB) and proof-of-weight (PoWeight)? - AAG (saakuru.com)
+[^5]: [Proof of Burn Consensus Algorithm in Blockchain - GeeksforGeeks ](https://www.geeksforgeeks.org/proof-of-burn-consensus-algorithm-in-blockchain/)
+[^6]: [Proof of Burn (PoB) | Learn Crypto | Coinmerce](https://coinmerce.io/en/learn/what-is-proof-of-burn/)
+[^7]: [What are proof-of-burn (PoB) and proof-of-weight (PoWeight)? - AAG (saakuru.com)
+](https://academy.saakuru.com/academy/what-are-proof-of-burn-pob-and-proof-of-weight-poweight/)https://academy.saakuru.com/academy/what-are-proof-of-burn-pob-and-proof-of-weight-poweight/

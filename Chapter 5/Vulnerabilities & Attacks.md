@@ -121,3 +121,132 @@ Enhanced security compared to traditional databases. Understanding these vulnera
   </li>
 </ol>
 
+## Mititgation and Prevention
+<ol>
+  <li>
+    51% Attack
+    <ol>
+      <li>
+        Incentivize honest behavior through appropriate reward mechanisms
+      </li>
+      <li>
+        Increase decentralization by promoting wider distribution of mining/staking power
+      </li>
+      <li>
+        Implement checkpoints or finality mechanisms to prevent block reorganizations
+      </li>
+    </ol>
+  </li>
+  <li>
+    Sybil Attack
+    <ol>
+      <li>
+        Implement robust identity management and access control mechanisms
+      </li>
+      <li>
+        Require PoW, PoS, other resource-based verification
+      </li>
+       <li>
+        Use trusted execution environment or hardware-based identity 
+      </li>
+    </ol>
+  </li>
+  <li>
+    DDoS Attack
+    <ol>
+      <li>
+        Implement rate-limiting and traffic filtering mechanisms
+      </li>
+      <li>
+        Use content delivery networks (CDNs) or load balancing 
+      </li>
+       <li>
+        Employ DDoS services or hardware appliances 
+      </li>
+    </ol>
+  </li>
+  <li>
+    Routing Attack
+    <ol>
+      <li>
+        Use encrypted communication channels and secure transport protocols
+      </li>
+      <li>
+        Implement peer authentication and authorization mechanisms
+      </li>
+      <li>
+        Deploy network monitoring and intrusion detection
+      </li>
+    </ol>
+  </li>
+  <li>
+    Smart Contract 
+    <ol>
+      <li>
+        Conduct thorough code audits and formal verification
+      </li>
+      <li>
+        Implement secure development practices and code review processes
+      </li>
+      <li>
+        Use trusted computing environments or secure enclaves for contract execution
+      </li>
+    </ol>
+  </li>
+  <li>
+    Cryptographic Security
+    <ol>
+      <li>
+        Strong cryptographic algo and protocols
+      </li>
+      <li>
+        Implement secure key management practices
+      </li>
+      <li>
+        Regular update and patch system to address cryptographic vulnerabilities
+      </li>
+    </ol>
+  </li>
+  <li>
+    Privacy Protection
+    <ol>
+      <li>
+        Use privacy-enhancing techniques like zero knowledge proofs, ring signatures, or mixer
+      </li>
+      <li>
+        Implement confidential transactions or secure multi-party computation
+      </li>
+      <li>
+        Enforce data protection and privacy regulations
+      </li>
+    </ol>
+  </li>
+  <li>
+    Eclipse Attack Prevention
+    <ol>
+      <li>
+        Maintain multiple diverse connections to the network
+      </li>
+      <li>
+        Implement peer reputation and trust scoring mechanisms
+      </li>
+      <li>
+        Use network topology analysis and monitoring tools
+      </li>
+    </ol>
+  </li>
+  <li>
+    Governance and Access Control
+    <ol>
+      <li>
+        Implement robust on-chain governance mechanisms
+      </li>
+      <li>
+        Enforce role-based access control 
+      </li>
+      <li>
+        Conduct regular security audits and compliance checks
+      </li>
+    </ol>
+  </li>
+</ol>
